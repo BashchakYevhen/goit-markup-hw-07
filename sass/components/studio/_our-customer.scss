@@ -1,0 +1,31 @@
+.client__block {
+  padding: 94px 0;
+}
+
+.client__list {
+  @include flex();
+}
+.client__item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+.client__link {
+  @include flex();
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border var(--time-duration) var(--cubik), color var(--time-duration) var(--cubik);
+  &:hover,
+  &:focus {
+    color: var(--activecolor);
+    border: 1px solid var(--activecolor);
+  }
+}
+
+.client__logo {
+  fill: currentColor;
+}
