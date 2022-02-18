@@ -85,7 +85,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-
+  resize: none;
   &:hover,
   &:focus {
     outline: none;
@@ -121,7 +121,7 @@
 }
 
 .modal__checkbox {
-  @include flex($justify: null);
+  @include flex();
 }
 .modal__checkbox-agreement {
   position: absolute;

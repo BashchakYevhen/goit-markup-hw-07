@@ -770,6 +770,7 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  resize: none;
 }
 
 .modal__input-area:hover, .modal__input-area:focus {
@@ -809,6 +810,7 @@ footer {
 .modal__checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .modal__checkbox-agreement {

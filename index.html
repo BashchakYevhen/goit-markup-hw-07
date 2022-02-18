@@ -405,7 +405,7 @@
         <form class="spam" name="email" autocomplete="on">
           <p class="spam__title">Подпишитесь на рассылку</p>
           <div class="spam__position">
-            <input class="spam__input" type="email" id="" placeholder="E-mail" />
+            <input class="spam__input" type="email" id="E-mail" placeholder="E-mail" />
             <button class="btn btn-mail-foot" type="submit">
               Подписаться
               <svg class="btn__icon" width="24px" height="24px">
@@ -419,10 +419,10 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <form action="" class="form-contact-us">
+        <form class="form-contact-us">
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-          <ul class="modal__list-contact">
-            <li class="modal__list-item">
+          <div class="modal__list-contact">
+            <div class="modal__list-item">
               <lable class="modal__item-label" for="name"
                 >Имя
                 <input class="modal__input-area input-height" type="name" name="name" id="name" />
@@ -430,8 +430,8 @@
                   <use xlink:href="./image/icons.svg#icon-name"></use>
                 </svg>
               </lable>
-            </li>
-            <li class="modal__list-item">
+            </div>
+            <div class="modal__list-item">
               <lable class="modal__item-label" for="tel"
                 >Телефон
                 <input class="modal__input-area input-height" type="tel" name="tel" id="tel" />
@@ -439,8 +439,8 @@
                   <use xlink:href="./image/icons.svg#icon-tel"></use>
                 </svg>
               </lable>
-            </li>
-            <li class="modal__list-item">
+            </div>
+            <div class="modal__list-item">
               <lable class="modal__item-label" for="email"
                 >Почта
                 <input
@@ -453,8 +453,8 @@
                   <use xlink:href="./image/icons.svg#icon-email"></use>
                 </svg>
               </lable>
-            </li>
-            <li class="modal__list-item">
+            </div>
+            <div class="modal__list-item">
               <lable class="modal__item-label" for="coment"
                 >Комментарий
                 <textarea
@@ -466,17 +466,17 @@
                   id="coment"
                 ></textarea>
               </lable>
-            </li>
-          </ul>
+            </div>
+          </div>
           <label class="modal__checkbox">
             <input class="modal__checkbox-agreement" type="checkbox" name="agreement-confirm" />
             <svg class="modal__icon-chek" width="16px" height="15px">
               <use href="./image/icons.svg#icon-check"></use>
             </svg>
-            <p class="modal__checkbox-text">
+            <span class="modal__checkbox-text">
               Соглашаюсь с рассылкой и принимаю
               <a class="agreement-link" href="">Условия договора</a>
-            </p>
+            </span>
           </label>
           <button class="btn send-button" type="submit">Отправить</button>
         </form>
